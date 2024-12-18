@@ -14,16 +14,18 @@ function App() {
       <Header />
       <main>
         <IntroSection />
-        <TabsSection active={tab} onChange={(current) => setTab(current)}/>
+        <TabsSection active={tab} onChange={(current) => setTab(current)} />
 
         {tab === 'main' && (
           <>
-                  <TeachingSection />
-                  <DifferencesSection />
+            <TeachingSection />
+            <DifferencesSection />
           </>
         )}
 
-        {tab === 'feedback' && <FeedBackSection/>}       
+        {tab === 'feedback' && <FeedBackSection />}
+
+        {tab === 'feedback' && <FeedBackSection />}
       </main>
     </>
   )
